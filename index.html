@@ -9,18 +9,32 @@
   </head>
   <body>
     <div class="container">
-      <p>Please enter a bill amount as well as answer how the service was.</p>
+      <p>Please enter a bill amount</p>
       <input type="number" placeholder="Bill Amount" id="bill" />
+      <p>Please select level of service</p>
       <div class="custom-select">
         <select>
-          <option value="" disabled selected>Select your option</option>
-          <option value="">Great Service</option>
-          <option value="">Bad Service</option>
+          <option value="0" disabled selected>Select your option</option>
+          <option value="1">Great Service</option>
+          <option value="2">Bad Service</option>
         </select>
         <span class="custom-arrow"></span>
       </div>
       <button class="submit">Submit</button>
     </div>
+
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <p>
+        Your bill was $<span class="user-amount"></span> and you received
+        <span class="service-choice"></span>, which means you should leave a
+        <span class="tip-percent"></span>% tip, which comes out to $<span
+          class="tip-amount"
+        ></span
+        >.
+      </p>
+    </div>
+    <div class="overlay-hidden"></div>
 
     <script src="script.js"></script>
   </body>

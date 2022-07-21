@@ -11,10 +11,11 @@ body {
   place-items: center;
   background-image: url(imgs/tipping.webp);
   background-attachment: fixed;
-  font-size: 18px;
+  font-size: 20px;
 }
 p {
   text-align: center;
+  font-weight: bold;
 }
 .container {
   background-image: linear-gradient(45deg, lightgreen, lightslategray);
@@ -43,6 +44,9 @@ p {
   border-radius: 23px;
   border: 0;
   padding: 10px;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 15px;
 }
 
 .submit:hover {
@@ -62,4 +66,30 @@ select {
   background-color: rgb(47, 61, 68);
   color: white;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Modal Stuff */
+
+.modal {
+  background-image: linear-gradient(-45deg, lightblue, lightslategray);
+  width: 15rem;
+  padding: 2rem;
+  position: absolute;
+  border-radius: 5px;
+  border-style: double;
+  font-size: 18px;
+}
+.close-modal {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+  font-size: 2rem;
+  background: none;
+  border: none;
+}
+
+.hidden {
+  display: none;
 }
