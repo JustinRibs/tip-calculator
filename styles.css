@@ -6,9 +6,10 @@
 }
 
 body {
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
+  /* min-height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url(imgs/tipping.webp);
   background-attachment: fixed;
   font-size: 20px;
@@ -26,6 +27,7 @@ p {
   border-style: groove;
   border-width: 3px;
   border-color: lightslategray;
+  margin-top: 10rem;
 }
 
 #bill:focus {
@@ -72,14 +74,19 @@ select {
 /* Modal Stuff */
 
 .modal {
-  background-image: linear-gradient(-45deg, lightblue, lightslategray);
-  width: 15rem;
+  background-color: linen;
+  width: 20rem;
   padding: 2rem;
   position: absolute;
   border-radius: 5px;
   border-style: double;
   font-size: 18px;
 }
+
+.modal span {
+  text-decoration: underline;
+}
+
 .close-modal {
   position: absolute;
   top: 0.5rem;
